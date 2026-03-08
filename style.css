@@ -154,4 +154,7 @@ html[dir="rtl"] table tr td:first-child {text-align: center;}
     align-items: center;
     gap: 15px;  }  nav ul li a {font-size: 18px;
     padding: 8px; }}
+nav ul { flex-wrap: wrap;
+  padding: 0 10px;
+  gap: 12px; }
 
