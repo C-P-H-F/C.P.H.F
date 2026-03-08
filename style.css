@@ -151,4 +151,20 @@ html[dir="rtl"] table tr td:first-child {text-align: center;}
     object-fit: cover;
 
     margin-bottom: 15px;}
+nav{ display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px; }
 
+.menu-left,
+.menu-right{ display:flex;
+list-style:none;
+gap:25px; }
+
+@media (max-width:768px){
+ nav{ flex-direction:column; }
+.menu-left,
+.menu-right{
+flex-wrap:wrap;
+justify-content:center;
+gap:12px; } }
