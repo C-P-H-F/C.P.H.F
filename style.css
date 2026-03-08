@@ -14,10 +14,11 @@ nav {background-color: #002147;
     padding: 15px 0;
     z-index: 1000;}
 
-nav ul {list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;}
+nav ul {list-style:none;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;}
 
 nav ul li a {color: white;
     text-decoration: none;
@@ -150,38 +151,4 @@ html[dir="rtl"] table tr td:first-child {text-align: center;}
     object-fit: cover;
 
     margin-bottom: 15px;}
-@media (max-width: 768px) {
-
-  nav ul {
-    flex-direction: row;
-    overflow-x: auto;
-    white-space: nowrap;
-    gap: 15px;
-    padding: 0 10px;
-  }
-
-  nav ul li {
-    flex: 0 0 auto;
-  }
-}
-nav ul { flex-wrap: wrap;
-  padding: 0 10px;
-  gap: 12px; }
-
-menu{display:flex;
-justify-content:center;
-gap:30px;
-flex-wrap:wrap;}
-
-@media (max-width:768px){
-.menu{
-flex-direction:row;
-flex-wrap:wrap;
-gap:12px;
-}
-.menu li{
-flex:1 1 40%;
-text-align:center;
-}
-}
 
