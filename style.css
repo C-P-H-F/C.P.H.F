@@ -75,22 +75,29 @@ li {margin-bottom: 8px;}
     padding: 25px;}
   table {font-size: 14px;} }
 
-@media (max-width: 600px) { body {padding-top: 100px;}
+@media (max-width:600px){
+body{padding-top:100px;}
 
-nav ul {flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
+nav ul{
+flex-direction:row;
+flex-wrap:wrap;
+justify-content:center;
+}
 
-    nav ul li {margin-bottom: 10px;}
+nav ul li{
+margin-bottom:10px;
+}
 
-    section {padding: 20px;}
+section{padding:20px;}
 
-    h2 {font-size: 18px;}
-    h3 {font-size: 16px;}
+h2{font-size:18px;}
+h3{font-size:16px;}
 
-    table {display: block;
-        overflow-x: auto;
-        white-space: nowrap;}
+table{
+display:block;
+overflow-x:auto;
+white-space:nowrap;
+}
 }
 
 body.dark {background-color: #121212;
@@ -160,4 +167,5 @@ html[dir="rtl"] table tr td:first-child {text-align: center;}
 flex-wrap:wrap;
 justify-content:center;
 gap:12px; } }
+
 
