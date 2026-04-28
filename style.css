@@ -14,16 +14,16 @@ nav {background-color: #002147;
     padding: 15px 0;
     z-index: 1000;}
 
-nav ul {list-style:none;
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;}
+nav ul {list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 18px;}
 
 nav ul li a {color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;}
+    transition: 0.3s;
+    font-size:14px;}
 
 nav ul li a:hover {color: #ffd700;}
 
@@ -56,47 +56,67 @@ th {background-color: #002147;
     color: white;}
 
 tr:nth-child(even) {background-color: #f2f2f2;}
+tr:hover {background-color:#d6eeee;}
+body.dark tr:hover {background-color:#3a3a3a;}
 
 ul {margin-left: 20px;
     margin-bottom: 20px;}
 
 li {margin-bottom: 8px;}
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { nav ul {flex-direction: column; gap: 15px;}
 
-  nav ul {
-    flex-direction: row;
-    overflow-x: auto;
-    white-space: nowrap;
-    gap: 15px;
-    padding: 0 10px;}
-  nav ul li {flex: 0 0 auto;}
-  section {margin: 30px 15px;
-    padding: 25px;}
-  table {font-size: 14px;} }
+    section {margin: 30px 15px;
+        padding: 25px;}
 
-@media (max-width:600px){
-body{padding-top:100px;}
+    table {font-size: 14px;}
+}
+@media (max-width: 600px){
+
+body{
+padding-top:70px;
+}
+
+nav{
+overflow-x:auto;
+white-space:nowrap;
+}
 
 nav ul{
+display:flex;
 flex-direction:row;
-flex-wrap:wrap;
-justify-content:center;
+flex-wrap:nowrap;
+justify-content:flex-start;
+gap:15px;
+padding:0 15px;
 }
 
 nav ul li{
-margin-bottom:10px;
+flex:0 0 auto;
+margin-bottom:0;
 }
 
-section{padding:20px;}
+nav ul li a{
+font-size:14px;
+}
 
-h2{font-size:18px;}
-h3{font-size:16px;}
+section{
+padding:20px;
+margin:20px 10px;
+}
 
 table{
 display:block;
 overflow-x:auto;
 white-space:nowrap;
+}
+
+h2{
+font-size:18px;
+}
+
+h3{
+font-size:16px;
 }
 }
 
@@ -151,21 +171,66 @@ html[dir="rtl"] table tr td:first-child {text-align: center;}
     padding: 25px;
     width: 280px;
     border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);}
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition:0.3s;}
+
+    .team-card:hover{
+transform:translateY(-5px);
+}
 
 .team-card img {width: 120px;
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-
     margin-bottom: 15px;}
 
-@media (max-width:768px){
- nav{ flex-direction:column; }
-.menu-left,
-.menu-right{
-flex-wrap:wrap;
-justify-content:center;
-gap:12px; } }
+    .book-box{text-align:center;margin-top:20px;}
 
+.book-box img{
+width:180px;
+border-radius:10px;
+margin-bottom:15px;
+}
 
+.book-box a{
+display:inline-block;
+margin-top:10px;
+padding:10px 20px;
+background:#002147;
+color:white;
+text-decoration:none;
+border-radius:6px;
+transition:0.3s;
+}
+
+.book-box a:hover{
+background:#004080;
+transform:scale(1.05);
+}
+
+.form-table th{
+background:#4b3b8f;
+color:white;
+text-align:left;
+}
+
+.form-table .title-row td{
+background:#4b3b8f;
+color:white;
+font-weight:bold;
+}
+
+.form-table .sub-row td{
+background:#eeeeee;
+}
+
+.form-table .total-row td{
+background:#4fb7c5;
+color:white;
+font-weight:bold;
+text-align:center;
+}
+
+.form-table td:first-child{
+font-weight:bold;
+}
